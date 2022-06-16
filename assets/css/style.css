@@ -176,7 +176,7 @@ html{
      position: relative;
     margin-top: 46px;
     padding-top:50% ;
-    background: url('/assets/img/chicago.jpg') top center / cover no-repeat; /* img, position/ size, repeat */
+    background: url('../img/chicago.jpg') top center / cover no-repeat; /* img, position/ size, repeat */
     /*animation: slider-change 10s infinite; */
 }
  @keyframes slider-change{
@@ -211,6 +211,7 @@ html{
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 #content {
  }
