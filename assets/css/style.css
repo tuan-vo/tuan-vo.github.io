@@ -177,8 +177,22 @@ html{
     margin-top: 46px;
     padding-top:50% ;
     background: url('/assets/img/chicago.jpg') top center / cover no-repeat; /* img, position/ size, repeat */
+    /*animation: slider-change 10s infinite; */
+}
+ @keyframes slider-change{
+    0%{
+        background: url('/assets/img/la.jpg') top center / cover no-repeat;
+    }
+    50%{
+        background: url('/assets/img/chicago.jpg') top center / cover no-repeat;
+    }
+    75%{
+        background: url('/assets/img/ny.jpg') top center / cover no-repeat;
+    }
+    100%{
+        background: url('/assets/img/la.jpg') top center / cover no-repeat
+    }
  }
-
 #slider .text-content{
     position: absolute;
     bottom: 48px;
@@ -317,6 +331,8 @@ html{
     margin-top: 15px;
     border: none;
     text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 .btn:hover{
     cursor: pointer;

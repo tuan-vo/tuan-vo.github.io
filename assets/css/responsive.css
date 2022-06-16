@@ -15,9 +15,10 @@
     }
     .contact-form .form-control{
         padding: 15px;
+        font-size: 16px;
     }
-    #footer .social-list{
-        font-size: 48px;
+    .contact-submit-btn{
+        font-size: 16px;
     }
     #footer .social-list a{
         margin: 0 8px;
@@ -26,11 +27,14 @@
         padding: 12px 0;
         display: inline-block;
     }
+
 }
 
 /* Tablet */
 @media (min-width:741px) and (max-width:1023px){
-    
+    #footer .social-list{
+        font-size: 48px;
+    }
 }
 /* Mobile */
 @media (max-width: 740px) {
