@@ -40,5 +40,8 @@ PC: >= 1024px;
 }
 /* Mobile */
 @media (max-width: 46.1875em) {
-   
+    .about-me .content{
+        margin: auto;
+        width: 100%;
+    }
 }
