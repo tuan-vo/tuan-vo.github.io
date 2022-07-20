@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Style css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Icon boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   </head>
@@ -62,14 +63,14 @@
         </div>
     </div>
     <!-- End: Slider -->
-    <div class="row mx-0">
+    <div class="row mx-0 ">
         <div class="col-sm-4 px-0">
-            <img src="./assets/img/Background-1.jpg" alt="" width="100%">
+            <img src="./assets/img/Background-1.jpg" alt="" width="100%" height="100%">
         </div>
-        <div class="col-sm-8 px-8 ">
-            <h1 class="mt-5 mb-5 text-gray">HELLO AND WELCOME</h1>
+        <div class="col-sm-8 col-haw">
+            <h1 class="mb-5 text-gray">HELLO AND WELCOME</h1>
             <div class="row">
-                <div class="col-sm-5">
+                <div class=" col-lg-7 col-sm-7 pr-5">
                     <div class="box">
                         <h3 class="mb-3">Fish House Philosophy</h3>
                         <p>For the best in food, service, value and atmosphere, you can’t choose our restaurant. We guarantee you the freshest seafood, delivered daily to our dock, prepared to your liking.
@@ -81,8 +82,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-2"></div>
-                <div class="col-sm-3">
+                <div class=" col-lg-5 col-sm-5">
                     <div class="mb-5">
                         <h5 class="text-red">PHONE</h5>
                         <p class="text-gray">800-123-1234</p>
@@ -277,9 +277,9 @@
     </div>
     <div class="row mx-0 mt-5">
         <div class="col-sm-6 px-0">
-            <img src="./assets/img/image-7.jpg" alt="" width="100%">
+            <img src="./assets/img/image-7.jpg" alt="" width="100%" height="100%" style="object-fit: cover;">
         </div>
-        <div class="col-sm-6 bg-content px-8 mt-5 ">
+        <div class="col-sm-6 bg-content p-5 px-8">
             <p class="text-good-01">
                 <i>Chef in House Explains</i>
             </p>
@@ -291,7 +291,10 @@
         </div>
     </div>
     <div class="row mx-0 mb-5">
-        <div class="col-sm-6 bg-content px-8 mt-5 text-end">
+        <div class="col-sm-6 px-0 order-1">
+            <img src="./assets/img/image-3.jpg" alt="" width="100%" height="100%" style="object-fit: cover;">
+        </div>
+        <div class="col-sm-6 bg-content p-5 px-8 text-end order-0">
             <p class="text-good-01">
                 <i>Feel Yourself as a Valued Guest</i>
             </p>
@@ -301,9 +304,7 @@
             </p>
             <a href="" class="btn-gray">More interior photos</a>
         </div>
-        <div class="col-sm-6 px-0">
-            <img src="./assets/img/image-3.jpg" alt="" width="100%">
-        </div>
+        
     </div>
     <div class="container mt-5 text-center py-5 ">
         <h1 class="text-gray">
@@ -318,7 +319,7 @@
     </div>
     <div class="bg-red py-5 col-12">
         <h1 class="text-white text-center" style="letter-spacing:2px;">BOOK A TABLE</h1>
-        <form active="" class="col-sm-4 m-auto bg-white p-5">
+        <form active="" class="col-lg-4 col-sm-7  m-auto bg-white p-5">
             <label for="ip_data" class="lb-btable">
                 <h6 class="inline mr-2">DATE</h6>
                 <input type="date" required class="ip-btable ip-w45" name="" id="ip_data">

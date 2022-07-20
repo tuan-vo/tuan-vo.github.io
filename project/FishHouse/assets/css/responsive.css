@@ -1,0 +1,27 @@
+/* 
+PC: >= 1024px;
+    Tablet: >= 740px & < 1024px
+    Mobile: < 740px 
+    */
+
+/* PC */
+@media (min-width:64em){
+
+}
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    .col-haw {
+        padding: 2.5rem 3.5rem;
+    }
+}
+
+/* Tablet */
+@media (min-width:46.25em) and (max-width:63.9375em){
+    .col-haw {
+        padding: 2.5rem 3.5rem;
+    }
+}
+/* Mobile */
+@media (max-width: 46.1875em) {
+   
+}

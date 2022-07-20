@@ -289,7 +289,9 @@ header .search i:hover{
         transform:translate(-50%,-50%) scale(1);
     }
 }
-
+.col-haw{
+    padding: 5.5rem 6.5rem;
+}
 .box-2{
     position: relative;
     width: 100%;
@@ -303,6 +305,7 @@ header .search i:hover{
     background-color: white;
     width: 350px;
     height: 130px;
+    max-width: 100%;
     text-align: center;
     opacity: 0;
 }
