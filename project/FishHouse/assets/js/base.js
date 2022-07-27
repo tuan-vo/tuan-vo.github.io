@@ -7,3 +7,6 @@ $(window).scroll(function(){
         $('header').removeClass('bg-black');
     }
 })
+window.addEventListener('scroll',function(){
+    console.log(this.window.pageYOffset);
+})

@@ -45,8 +45,10 @@ header{
     padding: 0 68px;
     z-index: 10;
 }
+
 header.w80{
     width: 80%;
+
 }
 header.bg-black{
     background-color: black !important;
@@ -58,6 +60,15 @@ header .logo a{
 header .logo img{
     height: 64px;
     max-width: 100%;
+}
+header .icon-menu{
+    position: absolute;
+    color: #ccc;
+    top: 50%;
+    left: 2%;
+    font-size: 40px;
+    transform: translateY(-50%);
+    visibility: hidden;
 }
 #menu_main{
     display: flex;
@@ -73,6 +84,19 @@ header .logo img{
     transition: 0.5s;
     visibility: hidden;
     animation: hidden_mnsub 1s forwards;
+}
+.overlay-full{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: #000000b5;
+    visibility: hidden;
+}
+.overlay-full.active{
+    visibility: visible;
 }
 @keyframes hidden_mnsub{
     0%{
@@ -121,6 +145,9 @@ header .logo img{
 #menu_main a{
     text-decoration: none;
     text-transform: uppercase;
+}
+#menu_main .text-item{
+    color: white;
 }
 .menu-item{
     position: relative;
