@@ -21,6 +21,13 @@ a{
     width: 80%;
     margin: auto;
 }
+.h-50{
+    height: 50%;
+}
+.row-scroll{
+    display: flex;
+    overflow-x: scroll;
+}
 /*Begin: Header*/      
 header{
     width: 100%;
@@ -184,7 +191,7 @@ header.bg-white{
     position: relative;
     overflow: hidden;
     transition: 0.5s;
-
+    height: auto;
 }
 .wrap-categories .box{
     position: absolute;
@@ -202,6 +209,8 @@ header.bg-white{
 }
 .wrap-categories img{
     transition: 1s;
+    height: 100%;
+    object-fit: cover;
 }
 .wrap-categories:hover img{
     transform: scale(1.2);
@@ -285,4 +294,91 @@ header.bg-white{
 .form-login .btn-register{
     color: black;
     font-weight: 700;
+}
+.col-overlay-350{
+    width: 350px;
+    height: 420px;
+}
+.box-overlay{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+.box-overlay .sale{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    color: #fb5858;
+    background-color: white;
+    display: none;
+    padding: 2px 10px;
+}
+.box-overlay .sale.onSale{
+    display: block;
+}
+.box-overlay .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.075);
+    transition: 0.5s;
+    opacity: 0;
+}
+.box-overlay img{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    object-fit: scale-down;
+}
+.box-overlay .box-icon{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    transition: .5s;
+    opacity: 0;
+}
+
+.box-overlay .box-icon .icon{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50% ;
+    margin: 0 5px;
+    color: black;
+    font-weight: 100;
+    font-size:20px;
+}
+.box-overlay .box-icon .icon:hover{
+    background-color: #fb5858;
+    color: white;
+    cursor: pointer;
+}
+.box-overlay:hover .overlay{
+    opacity: 1;
+    transition: 0.5s;
+}
+.box-overlay:hover .box-icon{
+    bottom: 20px;
+    opacity: 1;
+    transition: .8s;
+}
+.col-overlay-350 .box-product{
+    margin-top:10px ;
+}
+.col-overlay-350 .box-product .text{
+    color: black;
+    text-align: center;
+    display: block;
+    line-height: 1.7;
+}
+.col-overlay-350 .box-product a.text:hover{
+    color: #fb5858;
 }
