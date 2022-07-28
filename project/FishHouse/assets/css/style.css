@@ -32,17 +32,31 @@ html, body{
     color: white;
 }
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+@keyframes p_header{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+header > div{
     height: 100px;
+    width: 1150px;
+    max-width: 100%;
     background-color: rgba(0,0,0,.5);
     margin: auto;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 0 68px;
+    padding: 0 50px;
     z-index: 10;
 }
 
@@ -76,14 +90,14 @@ header .icon-menu{
 }
 .menu-sub{
     position: absolute;
-    top: 68px;
+    top: 100px;
     left: 0;
     background-color: white;
     padding: 10px 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.489);
-    transition: 0.5s;
+    transition: 1s;
     visibility: hidden;
-    animation: hidden_mnsub 1s forwards;
+    opacity: 0;
 }
 .overlay-full{
     position: fixed;
@@ -98,16 +112,7 @@ header .icon-menu{
 .overlay-full.active{
     visibility: visible;
 }
-@keyframes hidden_mnsub{
-    0%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(100px);
-    }
-}
+
 @keyframes zoom_mnsub{
     0%{
         transform: scale(1);
@@ -141,6 +146,8 @@ header .icon-menu{
 }
 .menu-sub a:hover{
     color: #ed4848;
+    transform: translateX(5px);
+    transition: 0.5s;
 }
 #menu_main a{
     text-decoration: none;
@@ -151,8 +158,8 @@ header .icon-menu{
 }
 .menu-item{
     position: relative;
-    margin: 0px 16px;
-    padding: 6px;
+    margin: 0px 5px;
+    padding: 5px;
     transition: 0.5s;
 
 }
@@ -161,29 +168,52 @@ header .icon-menu{
     font-weight: 700;
     font-size: 0.9em;
 }
+
 .menu-item:hover , .bd-bottom:hover::after{
     background-color: #ed4848;
     transition: 0.5s;
-    
 }
 .menu-item:hover .menu-sub{
     visibility: visible;
-    animation: zoom_mnsub 0.5s forwards;
-
+    top: 68px;
+    opacity: 1;
+    animation-delay:1s;
+    transition: 1s;
 }
 
-header .search i{
+header .search{
     font-size: 20px;
-    padding: 10px;
+    padding: 5px 10px;
     background-color: white;
     color: rgb(86, 85, 85);
-    border-radius: 50% ;
+    border-radius: 50px ;
+
 }
-header .search i:hover{
+header .search i{
+    padding: 5px 0;
+    display: none;
+
+}
+
+header .search input{
+    width: 85px;
+    height: 27px;
+    font-size: 16px;
+    color: #ccc;
+    border: none;
+    background: none;
+    padding-left: 5px;
+    outline: none;
+    display: none;
+
+}
+
+header .search:hover{
     cursor: pointer;
     background-color: #ed4848;
     color: white;
 }
+
 .bd-bottom::after{
     content: "";
     position: absolute;

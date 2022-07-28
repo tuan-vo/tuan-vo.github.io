@@ -6,17 +6,30 @@ PC: >= 1024px;
 
 /* PC */
 @media (min-width:64em){
-
+    header.active{
+        position: fixed;
+        background-color: black;
+        animation: p_header 1s forwards;
+    }
+    .menu-item i{
+        color: #ccc;
+        font-size: 20px;
+        transform: translate(-5px,5px) rotate(0deg);
+        transition: 0.5s;
+    }
+    .menu-item:hover i{
+        transform: translate(-5px,5px) rotate(-180deg);
+        transition: 0.3s;
+    }
+    header .search input.active{
+        display: block !important;
+    }
+    header .search i.active{
+        display: block !important;
+    }
 }
 /* Tablet & Mobile */
 @media (max-width: 63.9375em) {
-    .col-haw {
-        padding: 2.5rem 3.5rem;
-    }
-}
-
-/* Tablet */
-@media (min-width:46.25em) and (max-width:63.9375em){
     .col-haw {
         padding: 2.5rem 3.5rem;
     }
@@ -26,7 +39,7 @@ PC: >= 1024px;
         position: relative;
     }
     #menu_main {
-        display: block;
+        display: none;
         background-color: #495057;
         align-items: center;
         order: 0;
@@ -36,6 +49,9 @@ PC: >= 1024px;
         left: 0;
         top: 0;
         box-shadow: 0 0 10px #282727;
+    }
+    #menu_main.active{
+        display: block;
     }
     #menu_main .text-item{
         display: block;
@@ -48,6 +64,9 @@ PC: >= 1024px;
         right: 10px;
         color: #d4d4d4;
         font-size: 30px;
+    }
+    .menu-item:hover i{
+        transform: rotate(-180deg);
     }
     .logo{
         margin: auto;
@@ -94,6 +113,28 @@ PC: >= 1024px;
         height: 3px;
         background: none !important;
     }
+    header .search{
+        display: flex;
+        margin: 5px 0;
+        border-radius:0 ;
+    }
+    header .search i{
+        display: inline-block;
+        order: 2;
+    }
+    header .search input{
+        display: inline-block;
+        order: 1;
+        width: 90%;
+    }
+}
+
+/* Tablet */
+@media (min-width:46.25em) and (max-width:63.9375em){
+    .col-haw {
+        padding: 2.5rem 3.5rem;
+    }
+    
     
 }
 /* Mobile */

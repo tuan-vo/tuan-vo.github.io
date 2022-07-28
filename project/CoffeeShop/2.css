@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html , body, .top{
+    width: 100%;
+    height: 100%;
+}
+.top{
+    overflow: hidden;
+    position: relative;
+}
+.nen{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: bg 80s infinite;
+}
+@keyframes bg{
+    0%{transition: 5s;transform: scale(1);background-image: url(./img/h1.jpg);}
+    10%{transition: 5s;transform: scale(1.1);background-image: url(./img/h1.jpg);}
+    20%{transition: 5s;transform: scale(1.1);background-image: url(./img/h2.jpg);}
+    30%{transition: 5s;transform: scale(1);background-image: url(./img/h2.jpg);}
+    40%{transition: 5s;transform: scale(1.1);background-image: url(./img/h2.jpg);}
+    50%{transition: 5s;transform: scale(1.1);background-image: url(./img/h3.jpg);}
+    60%{transition: 5s;transform: scale(1);background-image: url(./img/h3.jpg);}
+    70%{transition: 5s;transform: scale(1.1);background-image: url(./img/h3.jpg);}
+    80%{transition: 5s;transform: scale(1.1);background-image: url(./img/h4.jpg);}
+    90%{transition: 5s;transform: scale(1);background-image: url(./img/h4.jpg);}
+    100%{transition: 5s;transform: scale(1.1);background-image: url(./img/h4.jpg);}
+}
+.noidung{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.khoi .nenden{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    transition: 0.5s;
+    opacity: 0;
+}
+.khoi{
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+.khoi:hover .nenden{
+    opacity: 1;
+    transition: 0.5s;
+}
+.khoi .text{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.khoi .nut{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.khoi .nut:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.khoi:hover .nut{
+    top: 40%;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.khoi .bottom{
+    position: absolute;
+    bottom: -10%;
+    color: white;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    opacity: 0;
+}
+.khoi:hover .bottom{
+    bottom: 2%;
+    transition: 0.5s;
+    opacity: 1;
+}
