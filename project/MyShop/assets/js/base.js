@@ -8,6 +8,15 @@ $(window).scroll(function(){
         $('header').removeClass('bg-white');
     }
 })
+window.addEventListener('scroll',function(){
+    if(window.pageYOffset > 150){
+        $('header').addClass('bg-white');
+        $('.btn-UpTop').addClass('active');
+    }else{
+        $('header').removeClass('bg-white');
+        $('.btn-UpTop').removeClass('active');
+    }
+})
 btnlogin1.onclick = function(){
     formlogin.classList.toggle('openForm');
 }

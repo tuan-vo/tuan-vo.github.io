@@ -5,6 +5,8 @@
 }
 html{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+
 }
 .container{
     width: 100%;
@@ -13,6 +15,9 @@ html{
 /* Comom */
 .text-black{
     color: black !important;
+}
+.text-gray{
+    color: gray !important;
 }
 a{
     text-decoration: none !important;
@@ -27,6 +32,9 @@ a{
 .row-scroll{
     display: flex;
     overflow-x: scroll;
+}
+.bg-none{
+    background: none !important;
 }
 /*Begin: Header*/      
 header{
@@ -144,9 +152,6 @@ header .icon.bx-user{
 }
 /*End: Header*/ 
 /* Begin: slider */
-.active{
-    background-color: black !important;
-}
 
 .slide h1{
     font-size: 4.5em;
@@ -388,4 +393,160 @@ header.bg-white{
 }
 .col-overlay-350 .box-product a.text:hover{
     color: #fb5858;
+}
+.box-subscribe{
+    background-color: #faf5ec;
+}
+.box-subscribe .style{
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid black;
+    margin: 0 5px;
+    transition: .5s;
+}
+.box-subscribe .style:hover{
+    color: #fb5858;
+    border-bottom: 2px solid #fb5858;
+    transition: .5s;
+}
+.box-subscribe input{
+    padding: 5px 10px;
+    width: 500px;
+    max-width: 70%;
+}
+.box-subscribe button{
+    padding: 5px 0;
+}
+.bg-sale{
+    background-color: #f8f8f8;
+}
+.sale-content h1{
+    font-size: 4rem;
+}
+.sale-content a{
+    color: gray;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+.sale-content a:hover{
+    color: #fb5858;
+}
+.sale-content .price{
+    color: gray;
+    text-decoration: line-through;
+}
+.sale-content .sale-price{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.sale-content .box-time{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.sale-content .box-time .box-count .num{
+    background-color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 25px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    align-items: center;
+}
+.sale-content .box-time .box-count .text{
+    font-family: 100;
+}
+.sale-content .btn{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    background: black;
+    border-radius: 0;
+    color: white;
+    padding: 10px 20px;
+    transition: .5s;
+}
+.sale-content .btn:hover{
+    background-color: #ae9e91;
+    color: white;
+    transition: .5s;
+}
+.box-blogs{
+    position: relative;
+}
+.box-blogs img{
+    width: 100%;
+    height: auto;
+}
+.box-blogs .box{
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    bottom: 1.5rem;
+    left: 50%;
+    color: white;
+    transform: translateX(-50%);
+}
+.box-blogs .box > a{
+    font-size: 1.8rem;
+    color: white;
+}
+.box-blogs .box .wrap-info{
+    display: flex;
+    justify-content: center;
+}
+.box-blogs .box .wrap-info .text{
+    display: inline-block;
+    padding: 0 10px;
+}
+.box-blogs .box .wrap-info .name{
+    color: white;
+}
+.box-blogs .box .wrap-info .amount-cmt{
+    border-left: 1px solid;
+}
+footer {
+    width: 100%;
+    background-color: #f6f6f6;
+}
+footer a{
+    display: block;
+    line-height: 1.7;
+}
+footer .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+footer form i{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+.btn-UpTop{
+    color: black;
+    font-size: 3rem;
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 10;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.btn-UpTop:hover i{
+    color: #fb5858;
+}
+.btn-UpTop.active{
+    visibility: visible;
 }
