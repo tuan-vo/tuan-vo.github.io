@@ -30,6 +30,9 @@ PC: >= 1024px;
         margin: auto;
         width: 70%;
     }
+    .about-me .bg-tt{
+        display: none;
+    }
     .my-knowledge .box-ls{
         width: 100%;
     }
@@ -42,6 +45,12 @@ PC: >= 1024px;
 @media (max-width: 46.1875em) {
     .about-me .content{
         margin: auto;
+        width: 100%;
+    }
+    .contact-me form input{
+        width: 100% !important;
+    }
+    .contact-me form .btn{
         width: 100%;
     }
 }

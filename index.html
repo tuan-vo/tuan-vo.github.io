@@ -1,129 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuan Vo</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
-<body>
-    <header>
-        <img src="./assets/img/profile-pic2.png" alt="" width="100%" class="avatar">
-        <h1 class="name">Van Tuan Vo</h1>
-        <h4 class="job my-1">
-            Web Developer
-        </h4>
-        <div class="icon-link-list">
-            <a href="https://www.facebook.com/tuanvo2908/" target="_blank">
-                <i class='bx bxl-facebook'></i>
-            </a>
-            <a href="#">
-                <i class='bx bxl-instagram'></i>
-            </a>
-            <a href="#">
-                <i class='bx bxl-youtube'></i>
-            </a>
-        </div>
-        <h3 class="phone">
-            <a href="tel:+0334920007">0334920007</a>
-        </h3>
-        <h3 class="email">
-            <a href="mailto:tuanvo2908t@gmail.com">
-                tuanvo2908t@gmail.com
-            </a>
-        </h3>
-        <a href="#" class="download-cv">
-            Download CV
-        </a>
-    </header>
-    <div class="container">
-        <div class="about-me">
-            <h1 class="title">
-                About me
-            </h1>
-            <div class="content">
-                <p>
-                    &nbsp  Good day, everyone! I'm Van Tuan Vo, I'm 20 years old and I'm from QuangNgai. I'm Front-end Developer.
-                </p>
-                <p>
-                    &nbsp I'm often praised for my creativity and independent working skills. I always put my heart and soul into every single website that I develop. I guess that's all I have to share about myself. Thank you for reading!
-                </p>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Tuan Vo</title>
+    </head>
+    <body>
+        <!--=============== HEADER PROFILE ===============-->
+        <header class="profile container">
+            <!-- Theme button  -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="assets/img/tuanvo.png" alt="">
+                        </div>
+                    </div>
+                    <h2 class="profile__name">Vo Van Tuan</h2>
+                    <h3 class="profile__profession">Website developer</h3>
+
+                    <ul class="profile__social">
+                        <a href="https://www.instagram.com/tuanca_29/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tuan-vo-a8b799224/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/tuanvo2908t" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">0</h3>
+                        <p class="profile__info-description">Years of <br> work</p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+2</h3>
+                        <p class="profile__info-description">Completed <br> projects</p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">0</h3>
+                        <p class="profile__info-description">Satisfied <br> customers</p>
+                    </div>
+                </div>
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a download="" href="assets/pdf/TUANVO_CV.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        <!-- <a href="https://api.whatsapp.com/send?phone=0334920007&text=Hello, more information!
+                        " target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a> -->
+                        <!-- Insert your brand name or profile -->
+                        <a href="https://m.me/tuanvo2908" target="_blank" class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hr-icon hr-right">
-            <i class='bx bx-code-block'></i>
-        </div>
-        <div class="my-knowledge">
-            <h1 class="title text-center">
-                My knowledge
-            </h1>
-            <div class="box-ls">
-                <div class="item-l">
-                    <img src="./assets/img/logo-language/logo-html5.png" width="100%" alt="">
+        </header>
+        
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <img src="assets/img/project-mystore.jpeg" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Website</span>
+                                    <h3 class="projects__title">My Store
+                                    </h3>
+                                    <a href="" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project-travel.jpeg" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Website</span>
+                                    <h3 class="projects__title">Booking Travel
+                                    </h3>
+                                    <a href="https://tuanvo2908t.github.io/travel" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid " data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Frontend developer
+                            </h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">ReactJS</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Backend Developer
+                            </h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">C/C++</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">C#</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Java</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">SQL</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item-l">
-                    <img src="./assets/img/logo-language/logo-css3.png" width="100%" alt="">
-                </div>
-                <div class="item-l">
-                    <img src="./assets/img/logo-language/logo-js.png" width="100%" alt="">
-                </div>
-                <div class="item-l">
-                    <img src="./assets/img/logo-language/logo-sqlserver.png" width="100%" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="hr-icon hr-left">
-            <i class='bx bx-code'></i>
-        </div>
-        <div class="experience">
-            <h1 class="title">
-                Experience
-            </h1>
-        </div>
-        <div class="hr-icon hr-left">
-            <i class='bx bxl-codepen' ></i>
-        </div>
-        <div class="projects">
-            <h1 class="title text-center">
-                Projects
-            </h1>
-            <div class="box-p">
-                <a href="./project/Website_TheBand/index.html" class="wrap-p" target="_blank">
-                    <img src="./assets/img/demo-project/web_theband.jpeg" alt="" width="100%">
-                </a>
-                <a href="./project/FishHouse/index.html" class="wrap-p" target="_blank">
-                    <img src="./assets/img/demo-project/fishhouse.jpeg" alt="" width="100%">
-                </a>
-                <a href="./project/MyShop/index.html" class="wrap-p" target="_blank">
-                    <img src="./assets/img/demo-project/my_store.jpeg" alt="" width="100%">
-                </a>
-                <a href="./project/Cowboy_Store/index.html" class="wrap-p" target="_blank">
-                    <img src="./assets/img/demo-project/Cowboy_Store.jpeg" alt="" width="100%">
-                </a>
-                <a href="./project/CoffeeShop/index.html" class="wrap-p" target="_blank">
-                    <img src="./assets/img/demo-project/CoffeeShop.jpeg" alt="" width="100%">
-                </a>
-            </div>
-        </div>
-        <div class="hr-icon hr-right">
-            <i class='bx bx-paper-plane'></i>
-        </div>
-        <div class="contact-me">
-            <h1 class="title text-center">
-                Contact me
-            </h1>
-            <form action="">
-                    
-            </form>
-        </div>
-        <footer>
-            <p>© 2022 <i class='bx bx-code-alt' ></i> coded by Tuan Vo</p>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; tuanvo. All rigths reserved
+            </span>
         </footer>
-    </div>
-</body>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
